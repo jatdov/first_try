@@ -1,0 +1,49 @@
+.center-text {
+    text-align: center;
+}
+.center-text h2{
+    font-size: var(--h2-font);
+    font-weight: 800;
+}
+.tour-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.box{
+    position: relative;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* filter: brightness(70%); */
+    transition: all 0.3s cubic-bezier(.499, .05, .55, .95);
+    display: block;
+}
+.box img:hover{
+    filter: brightness(100%);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.box h6{
+    position: absolute;
+    left: 25px;
+    bottom: 95px;
+    font-size: 18px;
+    font-weight: 500;   
+}
+.box h4{
+    position: absolute;
+    left: 25px;
+    bottom: 65px;
+    font-size: 20px;
+    font-weight: 700;   
+}
+.center-btn{
+    text-align: center;
+    margin-top: 4rem;
+}

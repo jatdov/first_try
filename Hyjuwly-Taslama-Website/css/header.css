@@ -1,0 +1,125 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 27px 17%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+.logo{
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.logo span {
+    color: var(--main-color);
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.h-right {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon {
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: 10px;
+    display: none;
+}
+header.sticky {
+    padding: 8px 17%;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+/* DROPDOWN LANG SWITCH */
+.lang-container {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-btn {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flag {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    width: 80px;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+}
+
+.lang-container:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 2px 7px;
+}
+
+.item:hover {
+    background-color: #ffffff6a;
+    border-radius: 5px;
+}
+
+.item::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tm::before {
+    background-image: url(/img/tm.png);
+}
+
+.ru::before {
+    background-image: url(/img/ru.png);
+}
+
+.en::before {
+    background-image: url(/img/uk.png);
+}
